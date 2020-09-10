@@ -1,0 +1,48 @@
+<h1>{{name}}</h1>
+
+<clr-tabs>
+    <clr-tab>
+        <button clrTabLink id="link1">Issues</button>
+        <clr-tab-content id="content1" *clrIfActive>
+            <form class="search" clrForm>
+                <label for="search_input">
+                    <input id="search_input" type="text" placeholder="Search for keywords...">
+                </label>
+            </form>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>{{issueCount}} Open</th>
+                        <th>Closed</th>
+                        <th>Labels Filter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>101</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>A</td>
+                        <td>1010</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>F</td>
+                        <td>1111</td>
+                        <td>XV</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </clr-tab-content>
+    </clr-tab>
+</clr-tabs>
